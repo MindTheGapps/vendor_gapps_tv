@@ -148,13 +148,12 @@ class dex_import(SoongPrebuilt):
         return self._to_blueprint(props)
 
 
-class genrule(SoongPrebuilt):
+class genrule(SoongModule):
     def __init__(self, filename: str, parts: list[str]):
-        self.filename = filename
-        self.install_path = "system/"
-        self.parts = parts
-        self.soong_module = "genrule"
+        super().__init__()
 
+        self.filename = filename
+        self.parts = parts
     def to_blueprint(self) -> str:
         props = {
             "name": f"{self.filename}-genrule",

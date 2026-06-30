@@ -1,0 +1,217 @@
+// Automatically generated file. DO NOT MODIFY
+
+soong_namespace {
+    imports: ["vendor/gapps_tv/common"],
+}
+
+genrule {
+    name: "AndroidMediaShell.apk-genrule",
+    out: ["AndroidMediaShell.apk"],
+    cmd: "cat $(in) > $(out)",
+    srcs: ["proprietary/product/priv-app/AndroidMediaShell/AndroidMediaShell.apk.00", "proprietary/product/priv-app/AndroidMediaShell/AndroidMediaShell.apk.01"],
+}
+
+android_app_import {
+    name: "AndroidMediaShell",
+    owner: "gapps_tv",
+    apk: ":AndroidMediaShell.apk-genrule",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "AtvRemoteService",
+    owner: "gapps_tv",
+    apk: "proprietary/product/priv-app/AtvRemoteService/AtvRemoteService.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "Backdrop",
+    owner: "gapps_tv",
+    apk: "proprietary/product/priv-app/Backdrop/Backdrop.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "DfuService",
+    owner: "gapps_tv",
+    apk: "proprietary/product/priv-app/DfuService/DfuService.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "GoogleCalendarSyncAdapter",
+    owner: "gapps_tv",
+    apk: "proprietary/product/app/GoogleCalendarSyncAdapter/GoogleCalendarSyncAdapter.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}
+
+android_app_import {
+    name: "GoogleExtShared",
+    owner: "gapps_tv",
+    apk: "proprietary/system/app/GoogleExtShared/GoogleExtShared.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+android_app_import {
+    name: "GoogleFeedback",
+    owner: "gapps_tv",
+    apk: "proprietary/system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "GoogleServicesFramework",
+    owner: "gapps_tv",
+    apk: "proprietary/system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "GoogleTTS",
+    owner: "gapps_tv",
+    apk: "proprietary/product/app/GoogleTTS/GoogleTTS.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}
+
+android_app_import {
+    name: "Katniss",
+    owner: "gapps_tv",
+    apk: "proprietary/product/priv-app/Katniss/Katniss.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "PrebuiltGmsCorePano",
+    owner: "gapps_tv",
+    apk: "proprietary/product/priv-app/PrebuiltGmsCorePano/PrebuiltGmsCorePano.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "SetupWraithPrebuilt",
+    owner: "gapps_tv",
+    apk: "proprietary/product/priv-app/SetupWraithPrebuilt/SetupWraithPrebuilt.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "TVLauncher",
+    owner: "gapps_tv",
+    apk: "proprietary/product/priv-app/TVLauncher/TVLauncher.apk",
+    overrides: ["TVLauncherNoGMS,Catapult"],
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "TVRecommendations",
+    owner: "gapps_tv",
+    apk: "proprietary/product/priv-app/TVRecommendations/TVRecommendations.apk",
+    overrides: ["TVRecommendationsNoGMS,Catapult"],
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "Tubesky",
+    owner: "gapps_tv",
+    apk: "proprietary/product/priv-app/Tubesky/Tubesky.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "talkback",
+    owner: "gapps_tv",
+    apk: "proprietary/product/app/talkback/talkback.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}

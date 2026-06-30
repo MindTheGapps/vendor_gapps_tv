@@ -1,0 +1,91 @@
+// Automatically generated file. DO NOT MODIFY
+
+soong_namespace {
+}
+
+prebuilt_etc {
+    name: "default-atv-permissions.xml",
+    src: "proprietary/product/etc/default-permissions/default-atv-permissions.xml",
+    relative_install_path: "default-permissions",
+    filename_from_src: true,
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "gapps.rc",
+    src: "proprietary/product/etc/init/gapps.rc",
+    relative_install_path: "init",
+    filename_from_src: true,
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "google-hiddenapi-package-whitelist.xml",
+    src: "proprietary/product/etc/sysconfig/google-hiddenapi-package-whitelist.xml",
+    relative_install_path: "sysconfig",
+    filename_from_src: true,
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "google-staged-installer-whitelist.xml",
+    src: "proprietary/product/etc/sysconfig/google-staged-installer-whitelist.xml",
+    relative_install_path: "sysconfig",
+    filename_from_src: true,
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "google.xml",
+    src: "proprietary/product/etc/sysconfig/google.xml",
+    relative_install_path: "sysconfig",
+    filename_from_src: true,
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "google_atv.xml",
+    src: "proprietary/product/etc/sysconfig/google_atv.xml",
+    relative_install_path: "sysconfig",
+    filename_from_src: true,
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-atv-product.xml",
+    src: "proprietary/product/etc/permissions/privapp-permissions-atv-product.xml",
+    relative_install_path: "permissions",
+    filename_from_src: true,
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-google-product.xml",
+    src: "proprietary/product/etc/permissions/privapp-permissions-google-product.xml",
+    relative_install_path: "permissions",
+    filename_from_src: true,
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-google-system.xml",
+    src: "proprietary/system/etc/permissions/privapp-permissions-google-system.xml",
+    relative_install_path: "permissions",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-google-system_ext.xml",
+    src: "proprietary/system_ext/etc/permissions/privapp-permissions-google-system_ext.xml",
+    relative_install_path: "permissions",
+    filename_from_src: true,
+    system_ext_specific: true,
+}
+
+prebuilt_etc {
+    name: "split-permissions-google.xml",
+    src: "proprietary/product/etc/permissions/split-permissions-google.xml",
+    relative_install_path: "permissions",
+    filename_from_src: true,
+    product_specific: true,
+}

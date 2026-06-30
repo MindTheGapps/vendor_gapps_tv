@@ -8,8 +8,8 @@
 #
 DATE=$(date -u +%Y%m%d_%H%M%S)
 export GAPPS_TOP=$(realpath .)
-ANDROIDV=16.0.0
-SDKV=36
+ANDROIDV=17.0.0
+SDKV=37
 GARCH=$1
 CPUARCH=$GARCH
 [ ! -z "$2" ] && VARIANT="-$2"

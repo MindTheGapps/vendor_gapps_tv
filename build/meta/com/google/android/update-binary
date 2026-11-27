@@ -268,7 +268,8 @@ fi
 ui_print "Generating addon.d file"
 cat addon.d/addond_head > addon.d/30-gapps.sh
 for f in `find . ! -path "./addon.d/*" -type f`; do
-  line=$(echo "$f" | sed 's/\.\///')
+  # addon.d paths are relative to /system, and ./system holds files of /system itself
+  line=$(echo "$f" | sed -e 's|^\./||' -e 's|^system/||')
   echo "$line" >> addon.d/30-gapps.sh
 done
 cat addon.d/addond_tail >> addon.d/30-gapps.sh
